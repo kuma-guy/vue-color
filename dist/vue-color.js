@@ -845,7 +845,7 @@ module.exports = true;
 /* 15 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.11' };
+var core = module.exports = { version: '2.6.12' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -1158,7 +1158,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 })('versions', []).push({
   version: core.version,
   mode: __webpack_require__(14) ? 'pure' : 'global',
-  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
+  copyright: '© 2020 Denis Pushkarev (zloirock.ru)'
 });
 
 
@@ -5637,6 +5637,7 @@ var render = function() {
         },
         on: {
           mousedown: _vm.handleMouseDown,
+          mouseup: _vm.handleMouseUp,
           touchmove: _vm.handleChange,
           touchstart: _vm.handleChange
         }
@@ -6660,6 +6661,7 @@ var render = function() {
       style: { background: _vm.bgColor },
       on: {
         mousedown: _vm.handleMouseDown,
+        mouseup: _vm.handleMouseUp,
         touchmove: _vm.handleChange,
         touchstart: _vm.handleChange
       }
@@ -6822,6 +6824,7 @@ var render = function() {
         staticClass: "vc-alpha-container",
         on: {
           mousedown: _vm.handleMouseDown,
+          mouseup: _vm.handleMouseUp,
           touchmove: _vm.handleChange,
           touchstart: _vm.handleChange
         }
