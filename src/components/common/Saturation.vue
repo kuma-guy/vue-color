@@ -3,6 +3,7 @@
     :style="{background: bgColor}"
     ref="container"
     @mousedown="handleMouseDown"
+    @mouseup="handleMouseUp"
     @touchmove="handleChange"
     @touchstart="handleChange">
     <div class="vc-saturation--white"></div>
