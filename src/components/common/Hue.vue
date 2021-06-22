@@ -7,6 +7,7 @@
       aria-valuemax="360"
       ref="container"
       @mousedown="handleMouseDown"
+      @mouseup="handleMouseUp"
       @touchmove="handleChange"
       @touchstart="handleChange">
       <div class="vc-hue-pointer" :style="{top: pointerTop, left: pointerLeft}" role="presentation">
